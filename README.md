@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+# Kişisel Portfolyo
 
-First, run the development server:
+Bu proje, kişisel portfolyo oluşturmak için geliştirilen bir web uygulamasıdır. **Next.js** ile geliştirilmiş olup, modern ve etkileyici bir tasarım sunar. Projede çeşitli animasyonlar, interaktif elementler ve öne çıkan projelerin tanıtımı yer almaktadır.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Özellikler
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Ana Sayfa Tanıtımı:**
+  - Kendinizi tanıtan kısa bir yazı.
+  - Hareketli balonlar ile dinamik bir görsel deneyim.
+- **Portfolyo Alanı:**
+  - GitHub üzerinde yayınladığınız projelerin kart tasarımıyla listelenmesi.
+  - Her kart üzerinde proje adı, açıklama ve bağlantılar yer alır.
+- **Dinamik Tema:**
+  - **Next-Theme** ile açık/koyu mod desteği.
+- **Animasyonlar:**
+  - **Framer Motion** ile sayfa geçişleri ve element animasyonları.
+  - **Typewriter Effect** ile dinamik yazılar.
+- **Progress Bar:**
+  - Sayfa yükleme sırasında üst kısımda ilerleme çubuğu (**Next.js Progressbar**).
+- **GraphQL Kullanımı:**
+  - Veriler GraphQL üzerinden dinamik olarak alınır.
+- **Responsive Tasarım:**
+  - **Tailwind CSS** ile her cihaz için kullanıcı dostu bir arayüz.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Kullanılan Teknolojiler
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Framework ve Araçlar:
+- **Next.js**  
+- **GraphQL**  
 
-## Learn More
+### Kütüphaneler:
+- **Tailwind CSS**  
+- **Framer Motion**  
+- **Typewriter Effect**  
+- **Next-Theme**  
+- **Next.js Progressbar**  
 
-To learn more about Next.js, take a look at the following resources:
+## Kurulum ve Çalıştırma
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Proje dizinine gidin:
+   ```bash
+   cd nextjs-developer-portfolio-project
+   ```
+2. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+3. `.env.local` dosyasını oluşturun ve GraphQL API URL'inizi ekleyin:
+   ```env
+   NEXT_PUBLIC_GRAPHCMS_URL=<GraphQL API URL>
+   ```
+4. Uygulamayı geliştirme modunda başlatın:
+   ```bash
+   npm run dev
+   ```
+5. Tarayıcınızda `http://localhost:3000` adresine gidin.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Ekran Görüntüleri
 
-## Deploy on Vercel
+![Uygulama Görünümü](./screenshots/ss.gif)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Katkıda Bulunma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Bu projeyi forklayın.  
+2. Yeni bir dal oluşturun:  
+   ```bash
+   git checkout -b yeni-ozellik
+   ```
+3. Değişikliklerinizi commit edin:  
+   ```bash
+   git commit -m "Yeni bir özellik eklendi"
+   ```
+4. Dalınızı push edin:  
+   ```bash
+   git push origin yeni-ozellik
+   ```
+5. Pull Request oluşturun.
+
+## Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
+
+---

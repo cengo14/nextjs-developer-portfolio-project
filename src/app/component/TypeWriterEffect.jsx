@@ -18,7 +18,7 @@ const TypewriterEffect = () => {
               "<strong>JS</strong>, <strong>React</strong> ve  <strong>TypeScript</strong> ile devam ediyorum "
             )
             .typeString(
-              ' sırada <strong style="color: #36BA98;">Next.Js</strong> var...'
+              ' şu aralar <strong style="color: #36BA98;">Next.Js</strong> ile ilgiliyim...'
             )
             .pauseFor(1000)
             .start();
